@@ -103,7 +103,7 @@ nav {
 }
 
 .intro-header {
-  color: black;
+  color: rgb(230, 46, 46);
   text-decoration: underline;
 }
 
@@ -180,9 +180,9 @@ nav {
     display: none;
     background-color: black;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     top: 120px;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     border: none;
   }
@@ -256,7 +256,7 @@ footer {
 }
 
 #projects {
-  background-color: white;
+  background-color: khaki;
   border-radius: 20px;
   width: 95%;
   padding-bottom: 20px;
@@ -286,6 +286,8 @@ footer {
 #projects-title {
   margin-top: 100px;
   border-bottom: groove 5px;
+  font-size: 30px;
+  color: khaki;
 }
 
 .website-projects-header {
