@@ -1,0 +1,96 @@
+body {
+  background-color: khaki;
+  display: flex;
+  font-family: monospace;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: max-content;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-title {
+  font-size: 10px;
+}
+
+.logo-div {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.icon-div {
+  padding: 20px;
+}
+
+#add-note {
+  cursor: pointer;
+}
+
+#main {
+  background-color: black;
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.note-input {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details-text {
+  width: 100%;
+  min-height: 200px;
+}
+
+.form {
+  text-align: center;
+}
+
+#add-form {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transform: rotate(-5deg);
+  font-size: 30px;
+  border-bottom: double;
+}
+
+.note-box {
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-box {
+  border: solid 2px black;
+  border-radius: 8px;
+  padding: 10px;
+}

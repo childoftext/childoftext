@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>001 - WEB NOTES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/stylesheets/style01.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo-div">
+        <i class="fa fa-sticky-note-o" style="font-size: 36px;"></i>
+        <h2 class="site-title">NOTES</h2>
+      </div>
+      <div class="icon-div">
+        <i onclick="displayForm()" class="fa fa-plus" id="add-note" style="font-size: 24px;"></i>
+      </div>
+    </nav>
+    <main id="main">
+      <header>WEB-Notes</header>
+      <p id="nonote">
+        Nothing here yet. Click the + icon to add a note.
+      </p>
+      <div class="note-input" id="add-form">
+        <div class="form">
+          <h3 class="note-input-title">Title</h3>
+          <input id="form-title-text" type="text" required>
+        </div>
+        <div class="form">
+          <h3 class="note-input-details">Details</h3>
+          <textarea id="form-details-text" class="details-text" required></textarea>
+        </div>
+        <button onclick="addNote()" id="noteadd" class="addnote-button">ADD NOTE</button>
+        <button onclick="hideForm()" class="cancel-button">CANCEL</button>
+      </div>
+    </main>
+    <script src="assets/scripts/script01.js"></script>
+  </body>
+</html>
