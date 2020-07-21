@@ -2,6 +2,8 @@ body {
   background-color: black;
   color: #ffffff;
   background: url(../Images/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   font-family: monospace;
   font-size: 13px;
   margin: 0;
