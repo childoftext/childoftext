@@ -218,9 +218,6 @@ nav {
   .dailywebsite {
     flex-direction: column;
   }
-  .site-shot {
-    max-width: 90%;
-  }
 }
 
 footer {
@@ -234,7 +231,7 @@ footer {
 }
 
 .site-shot {
-  width: 400px;
+  width: 200px;
 }
 
 .dailywebsite {
