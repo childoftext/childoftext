@@ -207,17 +207,6 @@ nav {
   .description {
     flex-direction: column;
   }
-
-  .website-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .dailywebsite {
-    flex-direction: column;
-  }
 }
 
 footer {
@@ -230,71 +219,6 @@ footer {
   padding-right: 30px;
 }
 
-.site-shot {
-  width: 200px;
-}
-
-.dailywebsite {
-  background-color: black;
-  color: white;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  margin-top: 20px;
-}
-
-.dailywebsite:hover {
-  transform: rotate(2deg) scale(0.9);
-}
-
-.dailywebsite > h2 {
-  margin: 20px;
-}
-
-#projects {
-  background-color: rgb(255, 248, 183);
-  border-radius: 20px;
-  width: 95%;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#daily-sites {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#daily-sites > a {
-  text-decoration: none;
-}
-
-.website-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#projects-title {
-  text-decoration: underline overline;
-  font-size: 30px;
-  color: rgb(255, 248, 183);
-}
-
-.website-projects-header {
-  color: black;
-  margin: 50px;
-  border-bottom: double 5px black;
-  font-size: 20px;
-}
 
 #top-demarcation {
   margin-top: 100px;
