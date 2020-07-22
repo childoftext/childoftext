@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>003 - TO-DO</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav id="top-nav">
+      <i class="fa fa-sticky-note" style="font-size: 36px; color: #EBF38B;"></i>
+      <h2 id="site-title">TO-DO</h2>
+      <i onclick="clearAll()" class="fa fa-ban" id="clear-notes" style="font-size: 36px; color: red;"></i>
+    </nav>
+    <main>
+      <div id="add-div">
+        <input type="text" id="add-input">
+        <button onclick="addActivity()" id="add-button">
+          <i class="fa fa-plus" style="font-size: 24px;"></i>
+        </button>
+      </div>
+
+      <h2 id="list-header">LIST</h2>
+      <div id="list-div"></div>
+    </main>
+    <script src="assets/scripts/script.js"></script>
+    <footer>CHILD OF TEXT, 2020</footer>
+  </body>
+</html>
