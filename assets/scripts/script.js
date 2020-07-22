@@ -31,3 +31,15 @@
         }
         else menuDisplay = "flex"
       }
+
+function burgerMenuDisplay(screenWidth) {
+  if (!screenWidth.matches) {
+    document.getElementById("burgermenu").style = `display: none`;
+    menuDisplay = "flex"
+  }
+}
+
+
+let screenWidth = window.matchMedia("(max-width: 500px)")
+burgerMenuDisplay(screenWidth) // Call listener function at run time
+screenWidth.addListener(burgerMenuDisplay)
