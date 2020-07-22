@@ -158,18 +158,21 @@ nav {
     display: none;
     background-color: black;
     padding: 20px;
-    border-radius: 10px;
-    top: 120px;
+    border-radius: 5px;
+    top: 85px;
     position: absolute;
+    right: 10px;
     flex-direction: column;
     border: none;
+    flex-direction: column;
+    align-items: center;
   }
   .intro-div {
     margin-left: 30px;
     margin-right: 30px;
   }
   .linkdiv {
-  width: 80vw;
+  width: 45vw;
   margin-bottom: 30px;
   }
 }
