@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: monospace;
+  width: 100vw;
 }
 
 #add-button {
@@ -50,7 +51,9 @@ body {
 .list-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-bottom: double 3px black;
+  max-width: 100%;
 }
 
 .list-item > i {
@@ -63,6 +66,8 @@ body {
 .list-item > p {
   font-size: 24px;
   color: #EBF38B;
+  max-width: 80vw;
+  word-wrap: break-word;
 }
 
 #list-div {
@@ -71,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #9F956C;
-  width: max-content;
+  width: 90%;
   padding: 20px;
   margin-top: 10px;
   border-radius: 30px;
@@ -82,6 +87,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #list-header {
@@ -89,19 +96,4 @@ main {
   font-size: 30px;
   color: #9F956C;
   border-bottom: double 5px #9F956C;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
