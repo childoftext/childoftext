@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0px 20px 0px 20px;
   font-size: 18px;
-  font-family: monospace;
+  font-family: 'Roboto Condensed', monospace;
 }
 
 a {
@@ -20,7 +20,7 @@ a:hover {
 }
 
 h2 {
-  font-family: 'Piedra', cursive;
+  font-family: 'Piedra', monospace;
   border-bottom: double 3px white;
   font-size: 22px;
 }
@@ -40,7 +40,7 @@ h2 {
 
 a.navlink {
   color: khaki;
-  font-family: 'Piedra', cursive;
+  font-family: 'Piedra', monospace;
   font-size: 25px;
   text-decoration: underline;
 }
@@ -229,7 +229,7 @@ a.navlink:hover {
 }
 
 .grid-item {
-  font-family: 'Neucha', cursive;
+  font-family: 'Neucha', monospace;
   background-color: rgb(14, 14, 14);
   color: white;
   padding: 30px;
