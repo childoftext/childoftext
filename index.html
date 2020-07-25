@@ -1,115 +1,140 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Child of Text</title>
+    <link rel="stylesheet" href="assets/stylesheets/style01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Child of Text</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    
+    
+    
   </head>
   <body>
-    <nav id="topnav">
-
-      <a href="/"><img id="logo" src="assets/icons/icon1.png"></a>
-
-
-      <i onclick="toggleMenu()" class="fa fa-bars" id="menu-toggle" style="font-size: 40px;"></i>
-
-
-      <div class="nav-div">
-        <a class="navlink" href="#about-me">            
-          <div class="linkdiv linkdiv1">
-            ABOUT ME
+    <main id="main">
+      <div id="intro">
+        <div id="nav-div">
+          <a class="navlink" href="https://blog.childoftext.com" target="_blank">BLOG</a>
+          <div class="title-div">
+            <img id="logo" src="assets/icons/icon2.png">
+            <h2 id="title-text">CHILD OF TEXT</h2>
           </div>
-        </a>
-        <a class="navlink" href="#projects-title">
-          <div class="linkdiv linkdiv2">
-            SOUVENIR
-          </div>
-        </a>
-        <a class="navlink" href="https://blog.childoftext.com" target="_blank">
-          <div class="linkdiv linkdiv3">
-            BLOG
-          </div>
-        </a>
-        <a class="navlink" href="#">
-          <div class="linkdiv linkdiv4">
-            CONTACT
-          </div>
-        </a>
+        </div>
+        <div class="description-div">
+          <h2 class="description-header">ABOUT ME</h2>
+          <p id="description-text">
+            My name is Cole Adedayo. I'm a Web Developer with most of my focus currently on Front-end Development and I intend on going fullstack in the foreseeable future. You can find me on:
+            <span>
+              <a href="https://github.com/childoftext" target="_blank">
+                <i class="fa fa-github"></i></a>,
+              <a href="https://twitter.com/childoftext" target="_blank">
+                <i class="fa fa-twitter"></i></a> and
+              <a href="https://instagram.com/childoftext" target="_blank">
+                <i class="fa fa-instagram"></i></a></span>.
+          </p>
+        </div>
       </div>
 
-
-      <div class="nav-div" onclick="toggleMenu()" id="burgermenu">
-        <h2>MENU</h2>
-        <a class="navlink" href="#about-me">            
-          <div class="linkdiv linkdiv1">
-            ABOUT ME
+      <div class="grid-display">
+        <div class="grid-item" id="sidebar">
+          <div id="stack-container">
+            <h2>TECH STACK</h2>
+            <div id="stack-selection">
+              <div onclick="stackButtonPress(allStackButton, allStack)" id="stack-all">
+                <p>ALL</p>
+              </div>
+              <div onclick="stackButtonPress(langStackButton, stackLang, stackTool)" id="stack-langs">
+                <p>LANGUAGES</p>
+              </div>
+              <div onclick="stackButtonPress(toolStackButton, stackTool, stackLang)" id="stack-tools">
+                <p>TOOLS</p>
+              </div>
+            </div>
+            <div id="tech-stack">
+              <img class="stack-lang all-stack" alt="HTML" src="https://img.icons8.com/dusk/48/000000/html-5.png"/>
+              <img class="stack-lang all-stack" alt="CSS3" src="https://img.icons8.com/dusk/48/000000/css3.png"/>
+              <img class="stack-lang all-stack" alt="JavaScript" src="https://img.icons8.com/dusk/48/000000/javascript.png"/>
+              <img class="stack-lang all-stack" alt="Ruby/Rails" src="https://img.icons8.com/dusk/48/000000/ruby-programming-language.png"/>
+              <img class="stack-tool all-stack" alt="Git/Github" src="https://img.icons8.com/color/48/000000/git.png"/>
+            </div>
+            <hr style="width: 80%;">
           </div>
-        </a>
-        <a class="navlink" href="#projects-title">
-          <div class="linkdiv linkdiv2">
-            SOUVENIR
+          <div id="workspaces">
+            <h2>WORKSPACES</h2>
+            <div id="workspace-list">
+              <a class="workspace" href="https://codepen.io/childoftext" target="_blank">CODEPEN</a>
+              <a class="workspace" href="https://github.com/childoftext" target="_blank">GITHUB</a>
+            </div>
           </div>
-        </a>
-        <a class="navlink" href="https://blog.childoftext.com" target="_blank">
-          <div class="linkdiv linkdiv3">
-            BLOG
+        </div>
+        <div class="projects">
+          <div id="projects-header">
+            <h2>PROJECTS</h2>
+            <p>A showcase of pure awesomeness *big grin*</p>
           </div>
-        </a>
-        <a class="navlink" href="#">
-          <div class="linkdiv linkdiv4">
-            CONTACT
+          <div class="projects-display">
+            <div class="grid-item">
+              <h3>JavaScript Notes</h3>
+              <p>A <a class="project-link" href="https://childoftext.com/daily-web-project/002/" target="_blank">notes taking webpage</a> built with pure JavaScript and styled using Flexbox.</p>
+            </div>
+            <div class="grid-item">
+              <h3>School of life - Survey Form</h3>
+              <p>A <a class="project-link" href="https://codepen.io/childoftext/full/xxZJVRo" target="_blank">survey form</a> built with accessibility in mind.</p>
+            </div>
+            <div class="grid-item">
+              <h3>Etch-A-Sketch</h3>
+              <p>My <a class="project-link" href="https://childoftext.github.io/Etch-A-Sketch/" target="_blank">favourite JavaScript toy</a> so far.</p>
+            </div>
+            <div class="grid-item">
+              <h3>Tribute Page</h3>
+              <p>A <a class="project-link" href="https://codepen.io/childoftext/full/vYLKbLV" target="_blank">tribute page</a>
+                designed with a vertical timeline and cards, also with accessibility in mind.</p>
+            </div>
+            <div class="grid-item">
+              <h3>To-Do List</h3>
+              <p>A <a class="project-link" href="https://childoftext.com/daily-web-project/003/" target="_blank">Project</a>
+                from my personal daily Front-end commitment.</p>
+            </div>
+            <div class="grid-item">
+              <h3>Here goes your/our project yes?</h3>
+              <p><a class="project-link" href="mailto:childoftext@gmail.com" target="_blank">Kindly send me an email</a>
+                if you'd like to work together with me on more awesomeness.</p>
+            </div>
+            <div class="grid-item">
+              <h3>RPS</h3>
+              <p>A <a class="project-link" href="https://childoftext.github.io/Javascript-Drum-Kit/" target="_blank">very popular game *grin*</a></p>
+            </div>
+            <div class="grid-item">
+              <h3>JavaScript Drum Kit</h3>
+              <p>One of my favourites on the JavaScript-30 Course. <a class="project-link" href="https://childoftext.github.io/Javascript-Drum-Kit/" target="_blank">Check out my own version here</a></p>
+            </div>
+            <div class="grid-item">
+              <h3>Ruby Tic-Tac-Toe</h3>
+              <p>Just another game. <a class="project-link" href="https://github.com/childoftext/Ruby-Projects-Odin/blob/master/tic-tac-toe.rb" target="_blank">Check out the code here</a> and it's <a class="project-link" href="https://repl.it/@BaselineAlpha/Tic-Tac-Toe#main.rb" target="_blank">Playable here</a></p>
+            </div>
           </div>
-        </a>
+        </div>
+        <div class="grid-item" id="didyouknow">
+          <h2>DID YOU KNOW</h2>
+          Yooo, did you know? This is a sidebar. Well... we learn everyday so don't beat yourself up for this.</div>
       </div>
-
-
-    </nav>
-    
-    <main>
-      <div class="intro-div">
-        <h2 class="intro-header">The <del>Moon</del> Landing</h2>
-        <p id="intro-text">Hello... My name is Cole and I'm a Web Developer. I'm currently on a mission to create one webpage/site per day and document it on my blog page. This is the first one and is now also my portfolio. 20/July/2020</p>
-      </div>
+      
+      
 
       
-<hr id="top-demarcation" style="width: 80%;">
 
-
-      <div class="aboutme-div" id="about-me">
-
-
-
-        <div class="description">
-          <div class="img-div">
-            <div class="socials-div">
-              <a class="social-icon" href="https://github.com/childoftext" target="_blank">
-                <i class="fa fa-github" style="font-size:36px">
-                </i>
-              </a>
-              <a class="social-icon" href="https://twitter.com/childoftext" target="_blank">
-                <i class="fa fa-twitter-square" style="font-size:36px">
-                </i>
-              </a>
-              <a class="social-icon" href="https://instagram.com/childoftext" target="_blank">
-                <i class="fa fa-instagram" style="font-size:36px">
-                </i>
-              </a>
-              <a class="social-icon" href="mailto:childoftext@gmail.com" target="_blank">
-                <i class="fa fa-envelope" style="font-size:36px">
-                </i>
-              </a>
-            </div>
-
-          </div>
-
-        
-        </div>
-
-      </div>
     </main>
-    <script src="assets/scripts/script.js">
-    </script>
-    <footer>CHILD OF TEXT, 2020</footer>
+
+    <footer>&copy;2020 <a href="https://childoftext.com" target="_blank">Childoftext</a></footer>
+
+    <script src="assets/scripts/script.js"></script>
+
   </body>
 </html>

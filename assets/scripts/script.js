@@ -1,45 +1,32 @@
+let allStackButton = document.querySelector("#stack-all");
+let langStackButton = document.querySelector("#stack-langs");
+let toolStackButton = document.querySelector("#stack-tools");
 
-      let animationText = document.querySelector("#intro-text")
-      let animationTextValue = animationText.innerHTML
-      animationText.innerHTML = ""
-      i = 0
+let stackLang = document.querySelectorAll(".stack-lang");
 
-      let menuDisplay = "flex"
+let stackTool = document.querySelectorAll(".stack-tool");
 
-      textAnim()
+let allStack = document.querySelectorAll(".all-stack");
 
-      function textAnim(){
-      if (i < animationTextValue.length){
-        animationText.innerHTML += animationTextValue[i];
-        i += 1
-        if (i == animationTextValue.length){
-          setTimeout(() => {                       
-          i = 0
-          animationText.innerHTML = ""
-          textAnim()
-          }, 2000);
-        }
-        setTimeout(textAnim, 200)
-      }
-      }
+let selectedStackButton = "transform: scale(0.9); color: white; box-shadow: 0px 0px 5px 5px rgb(20, 20, 20), 3px 3px 5px 5px black, inset 0px 0px 5px 5px rgb(7, 7, 7);";
 
-      function toggleMenu(){
-        document.getElementById("burgermenu").style = `display: ${menuDisplay}`
+allStackButton.style = selectedStackButton;
 
-        if (menuDisplay == "flex") {
-          menuDisplay = "none"
-        }
-        else menuDisplay = "flex"
-      }
+function stackButtonPress(button, show, hide) {
+  allStackButton.style = "";
+  langStackButton.style = "";
+  toolStackButton.style = "";
+  button.style = selectedStackButton;
 
-function burgerMenuDisplay(screenWidth) {
-  if (!screenWidth.matches) {
-    document.getElementById("burgermenu").style = `display: none`;
-    menuDisplay = "flex"
+
+for (let i = 0; i < show.length; i++) {
+  show[i].style = "display: block"
+  }
+
+
+
+
+for (let j = 0; j < hide.length; j++) {
+  hide[j].style = "display: none"
   }
 }
-
-
-let screenWidth = window.matchMedia("(max-width: 500px)")
-burgerMenuDisplay(screenWidth) // Call listener function at run time
-screenWidth.addListener(burgerMenuDisplay)
