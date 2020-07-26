@@ -55,16 +55,16 @@ let lightTheme = {
   "titleStyle": "background-color: rgb(14, 14, 14)",
   "gridStyle": "background-color: white; color: black; box-shadow: none",
   "headerStyle": "color: black",
-  "workSpaceStyle": "background-color: white;",
+  "workSpaceStyle": "background-color: white; color: black",
   "bodyStyle": "background-color: black",
-  "linksStyle": "color: purple"
+  "linksStyle": "color: red;"
 };
 
 let darkTheme = {
   "titleStyle": "background-color: rgb(14, 14, 14)",
   "gridStyle": "background-color: black; color: white;",
   "headerStyle": "color: white",
-  "workSpaceStyle": "background-color: white;",
+  "workSpaceStyle": "background-color: black",
   "bodyStyle": "background-color: black",
   "linksStyle": ""
 };
@@ -93,13 +93,21 @@ for (let l = 0; l < header2.length; l++) {
   header2[l].style = `${theme.headerStyle}`;
 };
 
+for (let n = 0; n < links.length; n++) {
+  links[n].style = `${theme.linksStyle}`
+};
+
 for (let m = 0; m < workspace.length; m++) {
   workspace[m].style = `${theme.workSpaceStyle}`;
 };
 
-for (let n = 0; n < links.length; n++) {
-  links[n].style = `${theme.linksStyle}`
-};
+let socialLink = document.querySelectorAll("span > a")
+
+for (let o = 0; o < socialLink.length; o++) {
+  socialLink[o].style = "background-color: none"
+}
+
+document.querySelector("footer > a").style = "background-color: none"
 
 document.getElementById("blog-link").style = "color: khaki"
 
