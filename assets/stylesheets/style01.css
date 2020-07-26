@@ -4,6 +4,7 @@ body {
   padding: 0px 20px 0px 20px;
   font-size: 18px;
   font-family: 'Roboto Condensed', monospace;
+  transition: background-color 1s;
 }
 
 a {
@@ -235,7 +236,7 @@ a.navlink:hover {
   padding: 30px;
   border-radius: 10px;
   box-shadow: inset 0px 0px 10px rgb(56, 56, 56), inset 0px 0px 15px 15px rgb(3, 3, 3), inset 0px 0px 18px 18px black, 0px 0px 2px 2px black;
-  transition: transform .25s;
+  transition: transform .25s, color 1s, background-color 1s;
 }
 
 .grid-item:hover {
@@ -272,4 +273,55 @@ footer {
   text-align: center;
   padding: 5px;
   border-radius: 10px 10px 0px 0px;
+}
+
+/*Theme Toggle*/
+
+#theme-options-toggle {
+  background-color: rgb(14, 14, 14);
+  padding: 10px;
+  box-shadow: -2px -2px 5px 5px rgb(20, 20, 20), 3px 3px 5px 5px black;
+  border-radius: 50%;
+}
+
+#theme-options-toggle:hover {
+  transform: scale(0.95);
+  color: khaki;
+  box-shadow: 0px 0px 5px 5px rgb(20, 20, 20), 3px 3px 5px 5px black, inset 0px 0px 2px 2px rgb(7, 7, 7);
+  font-family: monospace;
+}
+
+#theme-options-toggle:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 5px 5px rgb(20, 20, 20), 3px 3px 5px 5px black, inset 0px 0px 5px 5px rgb(7, 7, 7);
+}
+
+#theme-slider-box {
+  width: max-content;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(14, 14, 14);
+  color: white;
+  padding: 10px;
+  box-shadow: -2px -2px 5px 5px rgb(20, 20, 20), 3px 3px 5px 5px black;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+#theme-close {
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+#theme-slider {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#theme-labels {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  width: 100%;
 }

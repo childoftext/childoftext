@@ -20,13 +20,125 @@ function stackButtonPress(button, show, hide) {
 
 
 for (let i = 0; i < show.length; i++) {
-  show[i].style = "display: block"
+  show[i].style = "display: block";
   }
 
 
 
 
 for (let j = 0; j < hide.length; j++) {
-  hide[j].style = "display: none"
+  hide[j].style = "display: none";
   }
 }
+
+let themeBoxDisplay = "flex";
+
+function themeBoxToggle(){
+  document.getElementById("theme-slider-box").style = `display: ${themeBoxDisplay}`;
+  if (themeBoxDisplay == "flex") {
+    themeBoxDisplay = "none";
+  }
+  else themeBoxDisplay = "flex";
+}
+
+let mehTheme = {
+  "titleStyle": "",
+  "gridStyle": "",
+  "headerStyle": "",
+  "workSpaceStyle": "",
+  "bodyStyle": "",
+  "linksStyle": ""
+};
+
+
+let lightTheme = {
+  "titleStyle": "background-color: rgb(14, 14, 14)",
+  "gridStyle": "background-color: white; color: black; box-shadow: none",
+  "headerStyle": "color: black",
+  "workSpaceStyle": "background-color: white;",
+  "bodyStyle": "background-color: black",
+  "linksStyle": "color: purple"
+};
+
+let darkTheme = {
+  "titleStyle": "background-color: rgb(14, 14, 14)",
+  "gridStyle": "background-color: black; color: white;",
+  "headerStyle": "color: white",
+  "workSpaceStyle": "background-color: white;",
+  "bodyStyle": "background-color: black",
+  "linksStyle": ""
+};
+
+document.getElementById("theme-slider").value = 2
+
+let header2 = document.querySelectorAll(".header-colors");
+let gridItem = document.querySelectorAll(".grid-item");
+let workspace = document.querySelectorAll(".workspace");
+let titleBox = document.querySelector(".title-div");
+let links = document.querySelectorAll("a");
+
+
+function themeChange(theme){
+
+titleBox.style = `${theme.titleStyle}`;
+
+
+document.querySelector("body").style = `${theme.bodyStyle}`;
+
+for (let k = 0; k < gridItem.length; k++) {
+  gridItem[k].style = `${theme.gridStyle}`;
+};
+
+for (let l = 0; l < header2.length; l++) {
+  header2[l].style = `${theme.headerStyle}`;
+};
+
+for (let m = 0; m < workspace.length; m++) {
+  workspace[m].style = `${theme.workSpaceStyle}`;
+};
+
+for (let n = 0; n < links.length; n++) {
+  links[n].style = `${theme.linksStyle}`
+};
+
+document.getElementById("blog-link").style = "color: khaki"
+
+};
+
+
+let currentTheme = localStorage.getItem('theme');
+
+if (currentTheme == "1") {
+  themeChange(darkTheme);
+  document.getElementById("theme-slider").value = 1
+};
+
+if (currentTheme == "2") {
+  themeChange(mehTheme);
+  document.getElementById("theme-slider").value = 2
+};
+
+if (currentTheme == "3") {
+  themeChange(lightTheme);
+  document.getElementById("theme-slider").value = 3
+};
+
+
+
+function themeToggle() {
+  let themeValue = document.getElementById("theme-slider").value;
+  if (themeValue == 1) {
+    themeChange(darkTheme);
+    localStorage.setItem('theme', '1');
+  }
+
+  else if (themeValue == 2) {
+    themeChange(mehTheme);
+    localStorage.setItem('theme', '2');
+  }
+
+  else if (themeValue == 3) {
+    themeChange(lightTheme);
+    localStorage.setItem('theme', '3');
+  };
+};
