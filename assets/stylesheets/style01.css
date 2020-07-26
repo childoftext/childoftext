@@ -239,7 +239,7 @@ a.navlink:hover {
   transition: transform .25s, color 1s, background-color 1s;
 }
 
-.grid-item:hover {
+.project-item:hover {
   transform: scale(1.025);
 }
 
@@ -282,6 +282,7 @@ footer {
   padding: 10px;
   box-shadow: -2px -2px 5px 5px rgb(20, 20, 20), 3px 3px 5px 5px black;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #theme-options-toggle:hover {
