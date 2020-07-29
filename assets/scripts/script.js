@@ -53,7 +53,7 @@ let mehTheme = {
 
 let lightTheme = {
   "titleStyle": "background-color: rgb(14, 14, 14)",
-  "gridStyle": "background-color: white; color: black; box-shadow: none",
+  "gridStyle": "background-color: white; color: black; box-shadow: inset 0px 0px 10px 10px rgb(56, 56, 56);",
   "headerStyle": "color: black",
   "workSpaceStyle": "background-color: white; color: black",
   "bodyStyle": "background-color: black",
@@ -62,9 +62,9 @@ let lightTheme = {
 
 let darkTheme = {
   "titleStyle": "background-color: rgb(14, 14, 14)",
-  "gridStyle": "background-color: black; color: white;",
+  "gridStyle": "background-color: black; color: white; box-shadow: inset 0px 0px 10px rgb(56, 56, 56), inset 0px 0px 15px 15px rgb(3, 3, 3), inset 0px 0px 18px 18px black, 0px 0px 2px 2px black;",
   "headerStyle": "color: white",
-  "workSpaceStyle": "background-color: black",
+  "workSpaceStyle": "background-color: black; box-shadow: inset 0px 0px 10px rgb(56, 56, 56), inset 0px 0px 15px 15px rgb(3, 3, 3), inset 0px 0px 18px 18px black, 0px 0px 2px 2px black;",
   "bodyStyle": "background-color: black",
   "linksStyle": ""
 };

@@ -235,7 +235,7 @@ a.navlink:hover {
   color: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: inset 0px 0px 10px rgb(56, 56, 56), inset 0px 0px 15px 15px rgb(3, 3, 3), inset 0px 0px 18px 18px black, 0px 0px 2px 2px black;
+  box-shadow: 0px 0px 3px 3px rgb(20, 20, 20), 3px 3px 3px 3px black, inset 0px 0px 5px 5px rgb(7, 7, 7);
   transition: transform .25s, color 1s, background-color 1s;
 }
 
