@@ -53,7 +53,7 @@ let mehTheme = {
 
 let lightTheme = {
   "titleStyle": "background-color: rgb(14, 14, 14)",
-  "gridStyle": "background-color: white; color: black; box-shadow: inset 0px 0px 10px 10px rgb(56, 56, 56);",
+  "gridStyle": "background-color: white; color: black; box-shadow: inset 0px 0px 5px 5px rgb(56, 56, 56);",
   "headerStyle": "color: black",
   "workSpaceStyle": "background-color: white; color: black",
   "bodyStyle": "background-color: black",
